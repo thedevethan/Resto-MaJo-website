@@ -1,0 +1,628 @@
+/*
+Style de la navbar
+*/
+
+.navbar {
+    background-color: #ee5007;
+}
+
+.navbar-brand {
+    font-weight: 750;
+    font-style: italic;
+    color: white;
+    
+}
+
+.majo {
+    font-size: 120%;
+}
+
+.navbar-nav.nav-link {
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: rgb(249, 176, 42);
+    transition: 0.3s;
+}
+
+/*
+Style de la navbar
+*/
+
+/*
+Style du footer
+*/
+
+footer {
+    position: relative; /* Permet d'utiliser les pseudo-éléments absolument positionnés */
+    background-color: rgba(0, 0, 0, 0.717); /* Couleur de fond pour le texte */
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('AfriknFusion_AfriknMixAgneau.png'); /* Image de fond */
+    background-size: cover;
+    opacity: 0.5; /* Opacité réduite pour l'image de fond */
+    z-index: -1; /* Place l'image derrière le texte */
+}
+
+/* Assurez-vous que le texte est positionné correctement */
+footer.navbar-brand,
+footer.soustitre, footer.adress {
+    position: relative;
+    z-index: 1; /* Place le texte au-dessus de l'image de fond */
+}
+
+.soustitre {
+    
+    color: white;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 3%;
+}
+
+.footerfood {
+    position: absolute;
+}
+
+.localisation, .contact, .extra, .txtextra {
+    display: flex;
+    justify-content: center;
+}
+
+.adress {
+    padding-top: 0.3%;
+    padding-bottom: 3%;
+    color: white;
+    text-decoration: none;
+}
+
+.email {
+    padding-left: 0.4%;
+    padding-top: 0.2%;
+    color: white;
+}
+
+.phone {
+    display: flex;
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+
+
+.tel {
+    padding-top: 0.9%;
+    color: white;
+}
+
+
+.extra, .p1, .p2 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.extra .livraison {
+    padding-right: 2%;
+}
+
+.extra .wifi {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.extra .event {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.extra .payement {
+    padding-left: 2%;
+}
+
+.extra .payement img {
+    padding-left: 20%;
+}
+
+.extra .livraison, .wifi, .event, .payement {
+    text-align: center;
+}
+
+.enveloppe {
+    display: flex;
+}
+
+hr {
+    border: none; /* Supprime la bordure par défaut */
+    height: 0.2px; /* Hauteur de la ligne */
+    background-color: #ffffff; /* Couleur de la ligne */
+    width: 100%; /* Largeur de la ligne */
+}
+
+.social {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social .app {
+    padding-right: 6%;
+}
+
+.social .copyright {
+    padding-left: 1%;
+}
+
+.social .author {
+    padding-right: 1%;
+}
+
+
+footer {
+    display: flex;
+}
+
+/*
+Style du footer
+*/
+
+/*
+Style de la news letter
+*/
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #ee5007;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+#email {
+    width: 20vw;
+    height: 4vw;
+    border: none;
+    border-radius: 0;
+}
+
+#sub {
+    width: 7vw;
+    height: 4vw;
+    border: none;
+    border-radius: 0;
+    background-color: rgb(94, 22, 22);
+    color: white;
+    transition: 0.3s;
+}
+
+#sub:hover {
+    background-color: rgb(65, 14, 14);
+    transition: 0.3s;
+}
+
+#lab {
+    padding-top: 2.5vh;
+    padding-right: 1vw;
+    color: white;
+}
+
+/*
+Style de la news letter
+*/
+
+/*
+Style du welcome
+*/
+
+.succes {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13vh;
+    margin-bottom: 13vh;
+    display: flex;
+    padding-top: 3vh;
+    justify-content: center;
+    width: 40vw;
+    border-radius: 10px;
+    background-color: #32ba7d4f;
+    color: #32BA7C;
+    box-shadow:  3px 5px 10px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.succes p {
+    padding-top: 0.5vh;
+    padding-left: 0.5vw;
+}
+
+/*
+Style du welcome
+*/
+
+/*
+Style du menu
+*/
+
+.menucontainer {
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+.menu {
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 120%;
+    color: #ffdd00;
+}
+
+.name {
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 120%;
+}
+
+.price {
+    color: rgb(94, 22, 22);
+}
+
+.card {
+    width: 15vw;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.card img {
+    border-radius: 3px 3px 0 0;
+}
+
+.card_menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.voir {
+    display: flex;
+    justify-content:center;
+    padding-bottom: 10vh;
+    text-decoration: none;
+}
+
+.voir a {
+    font-family: "Teachers", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 120%;
+    color: #ffdd00;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border-color: #ffdd00;
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.3s;
+}
+
+.voir a:hover {
+    color: white;
+    background-color: #ffdd00;
+    border-color: #ffdd00;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hrmenu {
+    border: none; /* Supprime la bordure par défaut */
+    height: 1px; /* Hauteur de la ligne */
+    background-color: #ffdd00; /* Couleur de la ligne */
+    width: 100%; /* Largeur de la ligne */
+}
+
+/*
+Style du menu
+*/
+
+/*
+Style de la partie localisation
+*/
+
+.ggmaps {
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.maps {
+    margin-left: 1.5vw;
+}
+
+.maps iframe {
+    width: 55vw; 
+    height: 60vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.ride {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rider {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.come {
+    display: flex;
+    justify-content: start;
+    font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+
+.uber a {
+    font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 110%;
+    background-color: black;
+    border-radius: 8.5px;
+    font-weight: bold;
+    color: white;
+    padding-left: 9.8vw;
+    padding-right: 9.8vw;
+    padding-top: 2.8vh;
+    padding-bottom: 2.8vh;
+}
+
+.uber a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*
+Style de la partie localisation
+*/
+
+/*
+Style de la first view
+*/
+
+.fview {
+    background-image: url(home.jpg);
+    background-size: cover;
+    height: 60vh;
+    margin-bottom: 6vh;
+}
+
+.fview p {
+    background: linear-gradient( rgba(0,0,0,0), rgba(255, 255, 255, 1));
+    height: 60vh;
+    margin: auto;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding-top: 15vh;
+}
+
+.votre {
+    font-size: 240%;
+}
+
+.priorite {
+    color:#ee5007;
+    font-size: 340%;
+}
+
+/*
+Style de la first view
+*/
+
+
+
+@media only screen and (max-width: 599px) {
+    
+
+    /* Style du footer */
+
+    .social p {
+        font-size: 80%;
+    }
+
+    .social .app {
+        height: 10%;
+        padding-left: 7.1%;
+    }
+    
+    .social .copyright {
+        width: 30%;
+    }
+
+    .social .author {
+        padding-left: 9%;
+        width: 25%;
+    }
+    
+    .wha {
+        display: flex;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .localisation {
+        font-size: 90%;
+        justify-content: center;
+        padding-left: 2.7%;
+    }
+    
+    .soustitre {
+        padding-bottom: 6%;
+    }
+    
+    .enveloppe {
+        display: flex;
+    }
+
+    .adresscenter {
+        text-align: center;
+    }
+
+    .localisation {
+        padding-right: 5%;
+    }
+
+    /* Style du footer */
+
+
+    /* Style de la news letter */
+
+    #email {
+        width: 40vw;
+        height: 8vh;
+    }
+
+    #sub {
+        padding: 0;
+        width: 22vw;
+        height: 8vh;
+    }
+
+    #lab {
+        padding-right: 1vw;
+        padding-top: 2.2vh;
+    }
+
+    /* Style de la news letter */
+
+    /* Style de welcome.php */
+
+    .succes {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        display: flex;
+        padding-top: 2vh;
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .succes p {
+        padding-top: 0.5vh;
+        padding-left: 1vw;
+    }
+
+    .succes img {
+        padding-left: 1vw;
+    }
+
+    /* Style de welcome.php */
+
+    /* Style du menu */
+
+    .card {
+        width: 46vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .voir {
+        padding-bottom: 5vh;
+    }
+    
+    .voir a {
+        padding-top: 2.1vh;
+        padding-bottom: 2.1vh;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    /* Style du menu */
+
+    /*Style de la partie localisation*/
+
+    .ggmaps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+    }
+
+    .maps iframe {
+        width: 85vw; 
+        height: 40vh;
+    }
+
+    .come {
+        margin-top: 2vh;
+    }
+
+    .uber a {
+        padding-left: 30vw;
+        padding-right: 30vw;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+    }
+
+    /* Style de la partie localisation */
+
+    /* Style de la firstview */
+
+    .fview p {
+        height: 51vh;
+        padding-top: 10vh;
+    }
+
+    .fview {
+        background-position: center;
+        height: 50vh;
+        margin-bottom: 2vh;
+    }
+
+}
+
+
+
+
+
+
+
+
